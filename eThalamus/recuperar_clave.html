@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>eThalamus</title>
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	<body>
+		<form id="recuperar" name="recuperar" method="post" action="generar_clave.php">
+		  <table id="tabla_recuperar" width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+			<tr>
+				<td colspan="3" align="center" style="color: white; font-weight: bold; font-size: 30px;">Recuperar Contrase&ntilde;a</td>
+			</tr>
+			<tr>
+				<td colspan="3">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="3" align="center" style="color: white; font-weight: bold;">Ingrese su usuario para recuperar su contrase&ntilde;a</td>
+			</tr>
+			<tr>
+				<td colspan="3">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="49%" class="login_text" align="right">Nombre de Usuario</td>
+				<td width="1%" align="left">&nbsp;</td>
+				<td width="49%" height="25" align="left"><input name="user" type="text" id="user" maxlength="50" autofocus /></td>
+			</tr>
+			<tr>
+				<td colspan="3">&nbsp;</td>
+			</tr>
+			<tr>
+				<td align="right"><a href="index.html"><img src="eThalamusCliente/images/back.png"></a></td>
+				<td>&nbsp;</td>
+				<td align="left"><input class="botonLogin" name="login" id="login" type="submit" value=""></td>
+			</tr>
+		  </table>
+		</form>
+		<script>
+			var elemento = document.getElementById('tabla_recuperar');
+			var alto_ventana = window.innerHeight;
+			var alto_tabla = elemento.offsetHeight;
+
+			var posicion = ( alto_ventana / 2 ) - ( alto_tabla / 2 );
+			elemento.style.top = posicion+'px';
+			elemento.style.position = "absolute";
+		</script>
+	</body>
+</html>
